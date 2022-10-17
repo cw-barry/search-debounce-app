@@ -35,6 +35,12 @@ export default function Autocomplete() {
     };
   }, [debouncedSearch]);
 
+  useEffect(() => {
+    axios.get(`${ITEMS_API_URL}`).then((res) => {
+      setData(res.data.map((item) => item.title));
+    });
+  }, []);
+
   // const changeHandler = (search) => {
   //   getData(search);
   // };
