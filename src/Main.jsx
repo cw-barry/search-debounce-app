@@ -8,7 +8,7 @@ import {
 } from 'reactstrap';
 import debounce from 'lodash.debounce';
 import axios from 'axios';
-const ITEMS_API_URL = 'http://cwbarry.pythonanywhere.com/product/';
+const ITEMS_API_URL = 'https://cwbarry.pythonanywhere.com/product/';
 const DEBOUNCE_DELAY = 2000;
 
 export default function Autocomplete() {
